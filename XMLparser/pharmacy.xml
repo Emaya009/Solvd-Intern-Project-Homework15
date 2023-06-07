@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pharmacy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="pharmacy.xsd">
+    <customers>
+        <customer id="1">
+            <name>John Doe</name>
+            <address>123 Main St.</address>
+            <city>Anytown</city>
+            <state>CA</state>
+            <zip>12345</zip>
+        </customer>
+        <customer id="2">
+            <name>Jane Smith</name>
+            <address>456 Elm St.</address>
+            <city>Anytown</city>
+            <state>CA</state>
+            <zip>12345</zip>
+        </customer>
+    </customers>
+    <doctors>
+        <doctor id="1">
+            <name>Dr. John Smith</name>
+            <specialty>Pediatrics</specialty>
+        </doctor>
+        <doctor id="2">
+            <name>Dr. Jane Doe</name>
+            <specialty>Cardiology</specialty>
+        </doctor>
+    </doctors>
+    <medicine_orders>
+        <medicine_order id="1">
+            <customer_id>1</customer_id>
+            <doctor_id>1</doctor_id>
+            <date>2023-04-05</date>
+        </medicine_order>
+        <medicine_order id="2">
+            <customer_id>2</customer_id>
+            <doctor_id>2</doctor_id>
+            <date>2023-04-06</date>
+        </medicine_order>
+    </medicine_orders>
+    <prescription_items>
+        <prescription_item id="1">
+            <medicine_order_id>1</medicine_order_id>
+            <drug_name>Lipitor</drug_name>
+            <dosage>20mg</dosage>
+        </prescription_item>
+        <prescription_item id="2">
+            <medicine_order_id>2</medicine_order_id>
+            <drug_name>Zoloft</drug_name>
+            <dosage>50mg</dosage>
+        </prescription_item>
+    </prescription_items>
+</pharmacy>
